@@ -19,7 +19,7 @@ if (hasInterface) then {
 
 		sleep 10;
 
-		_object = radio;
+		_object = player;
 		_name = name player;
 		_camx = getposATL _object select 0;
 		_camy = getposATL _object select 1;
@@ -69,7 +69,7 @@ if (hasInterface) then {
         _title = "<t size='1.2' color='#e5b348' shadow='1' shadowColor='#000000'>ZONA DE COMBATE</t>
 		<img color='#ffffff' image='media\images\img_line_ca.paa' align='left' size='0.60' /><br/>";
         _text = format["%1<t>Evite deixar equipamentos jogados no chão, lembrando aqui não é sua casa e sim um ambiente militar.</t>
-		<br/><br/><img color='#ffffff' image='media\images\img_line_ca.paa' align='left' size='0.60' />",_title,(paramsArray select 6)];
+		<br/><br/><img color='#ffffff' image='media\images\img_line_ca.paa' align='left' size='0.60' />",_title];
 
         ["openSideTop",1.4] call ALIVE_fnc_displayMenu;
         ["setSideTopText",_text] call ALIVE_fnc_displayMenu;
