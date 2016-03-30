@@ -50,8 +50,7 @@ if(_object getVariable "ShoterAnimation_var_animDone") then
 	};
 
 
-    sleep 1;
+    sleep 0.3;
 };
 
 [_object] call ShoterAnimation_fnc_EndAnimation;
-
