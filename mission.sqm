@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3897.9141,145.6707,18174.941};
-		dir[]={0.9823212,-0.18766405,0.0056278175};
-		up[]={0.1877377,0.98219562,0.0010756579};
-		aside[]={0.0057374341,-1.8482669e-006,-1.0000998};
+		pos[]={3755.7961,141.13449,18156.291};
+		dir[]={0.98449576,-0.16103503,-0.071183711};
+		up[]={0.16070269,0.98690921,-0.011619755};
+		aside[]={-0.07211531,-1.6295235e-006,-0.99752927};
 	};
 };
 binarizationWanted=0;
@@ -175,8 +175,8 @@ class Mission
 		year=2016;
 		month=3;
 		day=31;
-		hour=5;
-		minute=-20;
+		hour=4;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -51639,7 +51639,7 @@ class Mission
 					{
 						ammo=0.11599573;
 						rank="LIEUTENANT";
-						init="this addaction [""<t color='#00FF00'>"" +""Pedir tratamento de emergência"",{    [_this select 3,_this select 3] call ACE_medical_fnc_treatmentAdvanced_fullHeal;    },player,1,true,true,"""",""((_target distance _this <3) && ([_this] call ace_medical_fnc_isMedic))""];";
+						init="nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this addaction [""<t color='#00FF00'>"" +""Pedir tratamento de emergência"",{    [_this select 3,_this select 3] call ACE_medical_fnc_treatmentAdvanced_fullHeal;    },player,1,true,true,"""",""((_target distance _this <3) && ([_this] call ace_medical_fnc_isMedic))""];";
 						class Inventory
 						{
 							class uniform
@@ -51796,7 +51796,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
