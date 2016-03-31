@@ -8,7 +8,7 @@ class EditorData
 	toggles=66;
 	class ItemIDProvider
 	{
-		nextID=1324;
+		nextID=1337;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3756.1128,141.80428,18155.131};
-		dir[]={0.93431395,-0.24195315,0.26209241};
-		up[]={0.23301995,0.97025597,0.065366693};
-		aside[]={0.27012426,-2.4351903e-006,-0.96292812};
+		pos[]={3897.9141,145.6707,18174.941};
+		dir[]={0.99251664,-0.12254652,0.0097462032};
+		up[]={0.12262603,0.99242985,0.0012041589};
+		aside[]={0.0098275691,-1.3586298e-006,-1.0000662};
 	};
 };
 binarizationWanted=0;
@@ -49538,6 +49538,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						description="Líder";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=789;
@@ -49653,7 +49654,6 @@ class Mission
 					{
 						skill=0.60000002;
 						description="Médico";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=792;

@@ -31,7 +31,7 @@ if(_canInit) then
 			_object playMoveNow (_animation select 0);
 			_object setVariable ["ShoterAnimation_var_animDone", false, false];
 			_object setVariable ["ShoterAnimation_var_animEnded", false, false];
-			_object setVariable ["ShoterAnimation_var_startingPosition", position _object, false];
+			_object setVariable ["ShoterAnimation_var_startingPosition", getPosASL _object, false];
 
 			_object addEventHandler ["AnimDone",
 				{

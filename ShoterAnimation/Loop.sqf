@@ -26,7 +26,7 @@ if(_object getVariable "ShoterAnimation_var_animDone") then
 		{
 			if(_animationPhase isEqualTo 0) then
 			{
-				_object setPos (_object getVariable "ShoterAnimation_var_startingPosition");
+				_object setPosASL (_object getVariable "ShoterAnimation_var_startingPosition");
 			};
 			NEXT_MOVE;
 			_object switchMove CURRENT_MOVE;
