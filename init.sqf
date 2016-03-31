@@ -5,12 +5,13 @@
 execVM "r3f_log\init.sqf";
 
 //----Script de Reboque-----
-
 execVM "reboque.sqf";
 
 //--- Disable Saving
 enableSaving [false, false];
 
+//--- Noites mais curtas, dias mais longos
+execVM "Scripts\shorternights.sqf";
 
 //---------------------- BI SQUAD
 // Sistema de gerenciamento de squads da Bohemia.
