@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=8;
 	};
 	class Camera
 	{
@@ -51639,7 +51639,7 @@ class Mission
 					{
 						ammo=0.11599573;
 						rank="LIEUTENANT";
-						init="nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this addaction [""<t color='#00FF00'>"" +""Pedir tratamento de emergência"",{    [_this select 3,_this select 3] call ACE_medical_fnc_treatmentAdvanced_fullHeal;    },player,1,true,true,"""",""((_target distance _this <3) && ([_this] call ace_medical_fnc_isMedic))""];";
+						init="nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";  this addaction [""<t color='#00FF00'>"" +""Pedir tratamento de emergência"",{    [_this select 1,_this select 1] call ACE_medical_fnc_treatmentAdvanced_fullHeal;    },nil,1,true,true,"""",""((_target distance _this <3) && ([_this] call ace_medical_fnc_isMedic))""];";
 						class Inventory
 						{
 							class uniform
